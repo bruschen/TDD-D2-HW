@@ -17,10 +17,10 @@ namespace PotterShoppingCart.Tests
             };
 
             var expected = 100;
-            Cashier cashier = new Cashier();
+            Cashier cashier = new Cashier(lsCartModel);
 
             //Act
-            var actual = cashier.check(lsCartModel);
+            var actual = cashier.Check();
 
             //Assert
             Assert.AreEqual(expected, actual);

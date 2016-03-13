@@ -9,7 +9,7 @@ namespace PotterShoppingCart.Tests
     public class CashierUnitTest
     {
         [TestMethod]
-        public void CartOrder_第一集_1本()
+        public void CartOrder_第一集_1本_價格_100()
         {
             //Arrange
             List<CartModel> lsCartModel = new List<CartModel>(){
@@ -27,7 +27,7 @@ namespace PotterShoppingCart.Tests
         }
 
         [TestMethod]
-        public void CartOrder_第一集_1本_第二集_1本()
+        public void CartOrder_第一集_1本_第二集_1本_價格_190()
         {
             //Arrange
             List<CartModel> lsCartModel = new List<CartModel>(){
@@ -46,7 +46,7 @@ namespace PotterShoppingCart.Tests
         }
 
         [TestMethod]
-        public void CartOrder_第一集_1本_第二集_1本_第三集_1本()
+        public void CartOrder_第一集_1本_第二集_1本_第三集_1本_價格_270()
         {
             //Arrange
             List<CartModel> lsCartModel = new List<CartModel>(){
@@ -66,7 +66,7 @@ namespace PotterShoppingCart.Tests
         }
 
         [TestMethod]
-        public void CartOrder_第一集_1本_第二集_1本_第三集_1本_第四集_1本()
+        public void CartOrder_第一集_1本_第二集_1本_第三集_1本_第四集_1本_價格_320()
         {
             //Arrange
             List<CartModel> lsCartModel = new List<CartModel>(){
@@ -87,7 +87,7 @@ namespace PotterShoppingCart.Tests
         }
 
         [TestMethod]
-        public void CartOrder_第一集_1本_第二集_1本_第三集_1本_第四集_1本_第五集_1本()
+        public void CartOrder_第一集_1本_第二集_1本_第三集_1本_第四集_1本_第五集_1本_價格_375()
         {
             //Arrange
             List<CartModel> lsCartModel = new List<CartModel>(){
@@ -109,7 +109,7 @@ namespace PotterShoppingCart.Tests
         }
 
         [TestMethod]
-        public void CartOrder_第一集_1本_第二集_1本_第三集_2本()
+        public void CartOrder_第一集_1本_第二集_1本_第三集_2本_價格_370()
         {
             //Arrange
             List<CartModel> lsCartModel = new List<CartModel>(){
@@ -129,7 +129,7 @@ namespace PotterShoppingCart.Tests
         }
 
         [TestMethod]
-        public void CartOrder_第一集_1本_第二集_2本_第三集_2本()
+        public void CartOrder_第一集_1本_第二集_2本_第三集_2本_價格_460()
         {
             //Arrange
             List<CartModel> lsCartModel = new List<CartModel>(){

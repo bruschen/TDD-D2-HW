@@ -33,7 +33,7 @@ namespace PotterShoppingCart
                                      .Select(m => m.BookName).Distinct().ToList();
 
             //先算出價格
-            int price = bookList.Count * 100;
+            int price = bookList.Count * GetDiscountPrice(bookList.Count);
 
             //扣掉已經計算過的書
             foreach (string item in bookList)
@@ -49,6 +49,23 @@ namespace PotterShoppingCart
 
 
             return price;
+        }
+
+        private int GetDiscountPrice(int bookCnt)
+        {
+            switch(bookCnt){
+                case 2:
+                    return 95;
+                case 3: 
+                    return 90;
+                case 4:
+                    return 80;
+                case 5:
+                    return 75;
+                default:
+                    return 100;
+            };
+
         }
     }
 }
